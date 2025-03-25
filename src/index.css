@@ -4,7 +4,7 @@
   }
   
   body {
-    background-color: black;
+    background-color:black;
     color: white;
   }
   
@@ -27,11 +27,52 @@
   
   .hover_effect img {
     width: 100%;
-  
+    
     transition: transform 0.7s ease;
     transform: translateZ(0)
   }
-  
+  .link-text {
+    text-decoration: none;
+    color: #FF9933; /* Saffron color */
+    margin-bottom: 15px;
+    display: inline-block;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+}
+
+.link-text:hover {
+    color: #FF7700; /* Darker saffron on hover */
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.winner-text {
+    color: white;  /* White text */
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.winner-text:hover {
+    border: 2px solid #FFFFFF; 
+    border-radius: 8px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: rgba(245, 245, 245, 0.817); /* Light grey for better visibility on hover */
+}
+
+.date-text {
+    color: #138808; /* Green color */
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.date-text:hover {
+    color: #0B660B;  /* Darker green on hover */
+    transform: scale(1.1); /* Slight zoom-in effect */
+    cursor: pointer;
+}
+
+
   .hover_effect:hover img {
     transform: scale(1.1) translateZ(50px);
   }
@@ -42,4 +83,7 @@
   
   div {
     margin: 10px;
+  }
+  h5{
+    color:aqua;
   }
