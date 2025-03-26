@@ -1,10 +1,10 @@
-import React from 'react'
-import Movies from './MovieZone/Movies'
+import Meal from "./Food_Recipe/Meal";
+
 const App = () => {
   return (
-    <div>
-      <Movies/>
-    </div>
-  )
-}
-export default App
+   <>
+   <Meal/>
+   </>
+  );
+};
+export default App;
