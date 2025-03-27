@@ -1,6 +1,6 @@
 input{
     width: 20rem;
-    background-color:yellowgreen;
+    background-color:whitesmoke;
     border: none;
     color: black;
 }
@@ -8,3 +8,40 @@ input{
 input:focus{
     outline: none;
 }
+a{
+    color: red;
+    text-decoration: none;
+}
+.image-container img {
+    width: 220px;
+    border-radius: 10px;
+    border: 2px solid blue;
+    transition: transform 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+    border: 2px solid cyan;
+}
+.song-title {
+    color: cyan;
+    transition: color 0.3s ease-in-out, text-shadow 0.2s ease-in-out;
+    /* cursor: pointer; */
+}
+
+.song-title:hover {
+    color: #00ffff;  /* Bright cyan for glow effect */
+    text-shadow: 0 0 8px #00ffff, 0 0 15px #00ffff;
+}
+.artist-name {
+    color: white;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    /* cursor: pointer; */
+}
+
+.artist-name:hover {
+    color: #ff66b2; /* Soft pink for a cool vibe */
+    transform: scale(1.1); /* Slight enlargement on hover */
+}
+
